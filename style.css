@@ -49,7 +49,7 @@ img {
 .arrows {
     width: 30px;
 	height: 10vh;
-	position: absolute;
+	position: fixed;
     margin-left: -15px;
     margin-top: -3rem;
 }
@@ -95,4 +95,29 @@ img {
 
 .delete-margin {
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    img {
+        border-radius: 5px;
+        max-width: 349px;
+        max-height: 349px;
+    }
+
+    #pull-card {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about {
+        padding: 0rem 2rem 2rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #description {
+        font-size: 16px;
+    }
 }
