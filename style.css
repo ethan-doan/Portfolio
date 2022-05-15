@@ -1,166 +1,98 @@
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: 'Varela Round', sans-serif;        
 }
 
 a {
-    color: #262626;
     text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #0dcaf0;
-}
-
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
 
 ul {
-    list-style:square;
-    list-style-position: outside;
-    padding: 0;
+    padding-left: 1.25rem;
 }
 
-section {
-    width: 100%;
+img {
+    width: 85%;
+    border-radius: 5px;
 }
 
-#name {
-    text-align: center;
-    font-size: 500%;
+#link {
+    transition: 0.3s;
 }
 
-#headshot {
-    width: 40%;
+#link:hover {
+    color: #0dcaf0;
+    transition: 0.3s;
 }
 
-#logo {
-    height: 40%;
+#description {
+    font-size: 13px;
 }
 
-#skilllogo {
-    width: 50px;
-    margin: 25px;
-}
-
-/* .hamburger {
-    display: block;
-    position: relative;
-    z-index: 1;
-    user-select: none;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-}
-
-.hamburger span {
+#opening {
     display: flex;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#pull-card {
+    border-radius: 10px;
+}
+
+.card-splitter {
+    height: 1rem;
     position: relative;
-    background-color: #262626;
-    border-radius: 6px;
-    transform-origin: 0 0; 
-    transition: 0.4s;
 }
 
-.hamburger:hover span:nth-child(2) {
-    transform: translateX(10px);
-    background-color: #0dcaf0;
+.arrows {
+    width: 30px;
+	height: 10vh;
+	position: absolute;
+    margin-left: -15px;
+
 }
 
-.hamburger.is-active span:nth-child(1) {
-    transform: translate(0px, -2px) rotate(45deg);
+.arrows path {
+	stroke: #0dcaf0;
+	fill: transparent;
+	stroke-width: 2px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
 }
 
-.hamburger.is-active span:nth-child(2) {
-    opacity: 0;
-    transform: translate(15px);
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
 }
 
-.hamburger.is-active span:nth-child(3) {
-    transform: translate(-3px, 3px) rotate(-45deg);
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
 }
 
-.hamburger.hamburger.is-active:hover span {
-    background-color: #0dcaf0;
-} */
-
-@media (min-width: 992px) {
-    #about {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 75vh;
-        margin-bottom: 12.5vh;
-    }
-    #experience-label {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    /* .hamburger {
-        display: none;  
-    } */
-
-    section {
-        display: flex;
-        min-height: 100vh;
-        justify-content: center;
-        align-items: center;
-    }
+.arrows path.a1 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
 }
 
-@media (min-width: 576px) {
-    #skilllogos {
-        display: flex;
-        justify-content: space-evenly;
-    }
+.arrows path.a2 {
+	animation-delay:-0.25s;
+	-webkit-animation-delay:-0.25s;
 }
 
-@media (max-width: 992px) {
-    #about {
-        text-align: center;
-    }
-
-    .chapter {
-        padding-top: 5rem;
-    }
-
-    #name {
-        padding-left: 15px;
-    }
-
-    .nav-item {
-        display: none;
-    }
-
-    #headshot {
-        width: 75%;
-    }
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s;
 }
 
-@media (max-width: 576px) {
-    #name {
-        font-size: 300%;
-    }
-
-    #skilllogos {
-        text-align: center;
-    }
-
-    li:before {
-        content: "–";
-        padding-right: 5px;
-      }
+.delete-margin {
+    margin: 0;
 }
