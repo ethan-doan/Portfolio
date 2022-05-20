@@ -1,32 +1,32 @@
-var click = false;
+var clickExperience = false;
 function infoToggleExperience() {
-    if(!click) {
-        click = true;
+    if(!clickExperience) {
+        clickExperience = true;
         document.getElementById('info-toggle-experience').innerHTML = 'Less Info';
     } else {
-        click = false;
+        clickExperience = false;
         document.getElementById('info-toggle-experience').innerHTML = 'More Info';
     }
 }
 
-var click = false;
+var clickEducation = false;
 function infoToggleEducation() {
-    if(!click) {
-        click = true;
+    if(!clickEducation) {
+        clickEducation = true;
         document.getElementById('info-toggle-education').innerHTML = 'Less Info';
     } else {
-        click = false;
+        clickEducation = false;
         document.getElementById('info-toggle-education').innerHTML = 'More Info';
     }
 }
 
-var click = false;
+var clickSkillsAndCertifications = false;
 function infoToggleSkillsAndCertifications() {
-    if(!click) {
-        click = true;
+    if(!clickSkillsAndCertifications) {
+        clickSkillsAndCertifications = true;
         document.getElementById('info-toggle-skills-and-certifications').innerHTML = 'Less Info';
     } else {
-        click = false;
+        clickSkillsAndCertifications = false;
         document.getElementById('info-toggle-skills-and-certifications').innerHTML = 'More Info';
     }
 }
