@@ -1,4 +1,6 @@
-var clickExperience = false;
+'use strict'
+
+let clickExperience = false;
 function infoToggleExperience() {
     if(!clickExperience) {
         clickExperience = true;
@@ -9,7 +11,7 @@ function infoToggleExperience() {
     }
 }
 
-var clickEducation = false;
+let clickEducation = false;
 function infoToggleEducation() {
     if(!clickEducation) {
         clickEducation = true;
@@ -20,7 +22,7 @@ function infoToggleEducation() {
     }
 }
 
-var clickSkillsAndCertifications = false;
+let clickSkillsAndCertifications = false;
 function infoToggleSkillsAndCertifications() {
     if(!clickSkillsAndCertifications) {
         clickSkillsAndCertifications = true;
