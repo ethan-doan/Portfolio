@@ -1,0 +1,58 @@
+.altFont {
+  transition: color 0.25s;
+  color: #9e9e9e;
+}
+
+.altFont:hover {
+  color: #9e9e9e;
+}
+
+.navFont {
+  transition: color 0.25s;
+  color: #e0e0e0;
+}
+
+.navBody {
+  /* background-color: blue; */
+  list-style-type: none;
+  height: 100vh;
+  padding: 0;
+}
+
+.navBody:hover {
+  color: #9e9e9e;
+}
+
+.navBody:hover .altFont {
+  color: #717171;
+}
+
+.navBody:hover .navFont {
+  color: #a1a1a1;
+}
+
+.navBody li:hover .altFont {
+  color: #9e9e9e;
+}
+
+.navBody li:hover .navFont {
+  color: #e0e0e0;
+}
+
+.navItem {
+  margin-top: 5px;
+  position: relative;
+}
+
+.navItem:hover .previewCard {
+  bottom: -70vh;
+}
+
+.previewCard {
+  position: absolute;
+  bottom: -100vh;
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+  transition: bottom 0.5s ease-in-out;
+}
