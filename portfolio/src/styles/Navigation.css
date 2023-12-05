@@ -13,10 +13,11 @@
 }
 
 .navBody {
-  background-color: blue;
+  /* background-color: blue; */
   list-style-type: none;
-  width: 8rem;
   padding: 0;
+  position: relative;
+  width: 8rem;
 }
 
 .navBody:hover .altFont {
@@ -29,7 +30,6 @@
 
 .navItem {
   margin-top: 5px;
-  position: relative;
 }
 
 .navItem:hover .altFont {
@@ -41,14 +41,17 @@
 }
 
 .navItem:hover .previewCard {
-  bottom: -70vh;
+  bottom: -80vh;
 }
 
 .previewCard {
-  position: absolute;
-  bottom: -100vh;
-  width: 70vw;
-  height: 100%;
   background-color: #e0e0e0;
+  bottom: -100vh;
+  color: #212121;
+  height: 100%;
+  position: absolute;
+  padding: 20%;
+  border-radius: 15px;
   transition: bottom 0.5s ease-in-out;
+  width: 70vw;
 }
