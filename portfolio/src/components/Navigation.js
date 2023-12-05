@@ -32,27 +32,39 @@ function Navigation() {
           <li className="navItem">
             <span className="altFont">01 </span>
             <span className="navFont">About Me</span>
-            <div className="previewCard">Content for About Me</div>
+            <div className="previewCard">
+              <p className="previewTitle">A Little Bit About Me</p>
+            </div>
           </li>
           <li className="navItem">
             <span className="altFont">02 </span>
             <span className="navFont">Experience</span>
-            <div className="previewCard">Content for Experience</div>
+            <div className="previewCard">
+              <p className="previewTitle">My Work Experience</p>
+            </div>
           </li>
           <li className="navItem">
             <span className="altFont">03 </span>
             <span className="navFont">Education</span>
-            <div className="previewCard">Content for Education</div>
+            <div className="previewCard">
+              <p className="previewTitle">Education & Leadership</p>
+            </div>
           </li>
           <li className="navItem">
             <span className="altFont">04 </span>
             <span className="navFont">Projects</span>
-            <div className="previewCard">Content for Projects</div>
+            <div className="previewCard">
+              {" "}
+              <p className="previewTitle">Projects I've Worked On</p>
+            </div>
           </li>
           <li className="navItem">
             <span className="altFont">05 </span>
             <span className="navFont">Contact</span>
-            <div className="previewCard">Content for Contact</div>
+            <div className="previewCard">
+              {" "}
+              <p className="previewTitle">Contact Me</p>
+            </div>
           </li>
         </ul>
       </div>

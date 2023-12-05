@@ -6,16 +6,6 @@
 .altFont:hover {
   color: #9e9e9e;
 }
-/* 
-.container {
-  padding-top: 5%;
-  padding-left: 15%;
-  padding-right: 15%;
-} */
-
-.header {
-  font-family: "IM Fell English SC", serif;
-}
 
 .navFont {
   transition: color 0.25s;
@@ -55,7 +45,7 @@
 }
 
 .navItem:hover .previewCard {
-  bottom: -90%;
+  bottom: -92.5%;
 }
 
 .previewCard {
@@ -67,8 +57,13 @@
   height: 100%;
   left: 0;
   position: absolute;
-  padding: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   transition: bottom 0.25s ease-in-out;
   width: 100%;
   z-index: 10;
+}
+
+.previewTitle {
+  font-size: 26px;
 }
