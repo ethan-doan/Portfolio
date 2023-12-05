@@ -22,7 +22,7 @@ function Navigation() {
   }, []);
 
   const navContainerStyle = {
-    height: `calc(100vh - ${contentHeight}px)`, // Adjust the height dynamically
+    height: `calc(100vh - ${contentHeight + 1}px)`, // Adjust the height dynamically
   };
 
   return (
