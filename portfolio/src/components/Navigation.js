@@ -27,8 +27,8 @@ function Navigation() {
         </li>
         <li className="navItem">
           <span className="altFont">05 </span>
-          <span className="navFont">Other</span>
-          <div className="previewCard">Content for Other</div>
+          <span className="navFont">Contact</span>
+          <div className="previewCard">Content for Contact</div>
         </li>
       </ul>
     </div>

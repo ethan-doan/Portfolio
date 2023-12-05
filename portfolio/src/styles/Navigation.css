@@ -13,14 +13,10 @@
 }
 
 .navBody {
-  /* background-color: blue; */
+  background-color: blue;
   list-style-type: none;
-  height: 100vh;
+  width: 8rem;
   padding: 0;
-}
-
-.navBody:hover {
-  color: #9e9e9e;
 }
 
 .navBody:hover .altFont {
@@ -31,17 +27,17 @@
   color: #a1a1a1;
 }
 
-.navBody li:hover .altFont {
-  color: #9e9e9e;
-}
-
-.navBody li:hover .navFont {
-  color: #e0e0e0;
-}
-
 .navItem {
   margin-top: 5px;
   position: relative;
+}
+
+.navItem:hover .altFont {
+  color: #9e9e9e;
+}
+
+.navItem:hover .navFont {
+  color: #e0e0e0;
 }
 
 .navItem:hover .previewCard {
@@ -51,7 +47,7 @@
 .previewCard {
   position: absolute;
   bottom: -100vh;
-  width: 100%;
+  width: 70vw;
   height: 100%;
   background-color: #e0e0e0;
   transition: bottom 0.5s ease-in-out;
