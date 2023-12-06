@@ -45,12 +45,12 @@
 }
 
 .navItem:hover .previewCard {
-  transform: translateY(90%); /* Move into view */
+  transform: translateY(0);
+  /* Move into view */
 }
 
 .previewCard {
   background-color: #e0e0e0;
-  /* bottom: -100%; */
   border-radius: 15px;
   box-sizing: border-box;
   color: #212121;
@@ -59,8 +59,9 @@
   position: absolute;
   padding-left: 5%;
   padding-right: 5%;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Adjust as needed */
-  transform: translateY(100%); /* Start off-screen */
+  /* top: 90vh; */
+  transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1); /* Adjust as needed */
+  transform: translateY(7.5vh);
   will-change: transform; /* Optimize for smoother animations */
   width: 100%;
   z-index: 10;
