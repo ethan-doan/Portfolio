@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Card from "./Card.js";
 import "../styles/Navigation.css";
 
 function Navigation() {
@@ -14,15 +15,9 @@ function Navigation() {
       return header ? header.offsetHeight : 0;
     };
 
-    const calculateNavBodyHeight = () => {
-      const nav = document.getElementsByClassName("navBody")[0];
-      return nav ? nav.offsetHeight : 0;
-    };
-
     // Function to update height on resize
     const handleResize = () => {
       const headerHeight = calculateHeaderHeight();
-      const navBodyHeight = calculateNavBodyHeight();
 
       setContentHeight(headerHeight);
 
@@ -61,57 +56,49 @@ function Navigation() {
           <li className="navItem" onClick={() => handleNavItemClick(0)}>
             <span className="altFont">01 </span>
             <span className="navFont">About Me</span>
-            <div
-              className={`previewCard ${activeCard === 0 ? "active" : ""}`}
+            <Card
+              title="A Little Bit About Me"
+              isActive={activeCard === 0}
               style={previewCardStyle}
             >
-              <p className="previewTitle">A Little Bit About Me</p>
-              {activeCard === 0 && (
-                <p className="previewContent">
-                  Additional information about About Me...
-                </p>
-              )}
-            </div>
+              <p>Additional Information About Me...</p>
+            </Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(1)}>
             <span className="altFont">02 </span>
             <span className="navFont">Experience</span>
-            <div
-              className={`previewCard ${activeCard === 1 ? "active" : ""}`}
+            <Card
+              title="My Work Experience"
+              isActive={activeCard === 1}
               style={previewCardStyle}
-            >
-              <p className="previewTitle">My Work Experience</p>
-            </div>
+            ></Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(2)}>
             <span className="altFont">03 </span>
             <span className="navFont">Education</span>
-            <div
-              className={`previewCard ${activeCard === 2 ? "active" : ""}`}
+            <Card
+              title="Education & Leadership"
+              isActive={activeCard === 2}
               style={previewCardStyle}
-            >
-              <p className="previewTitle">Education & Leadership</p>
-            </div>
+            ></Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(3)}>
             <span className="altFont">04 </span>
             <span className="navFont">Projects</span>
-            <div
-              className={`previewCard ${activeCard === 3 ? "active" : ""}`}
+            <Card
+              title="Projects I've Worked On"
+              isActive={activeCard === 3}
               style={previewCardStyle}
-            >
-              <p className="previewTitle">Projects I've Worked On</p>
-            </div>
+            ></Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(4)}>
             <span className="altFont">05 </span>
             <span className="navFont">Contact</span>
-            <div
-              className={`previewCard ${activeCard === 4 ? "active" : ""}`}
+            <Card
+              title="Contact Me"
+              isActive={activeCard === 4}
               style={previewCardStyle}
-            >
-              <p className="previewTitle">Contact Me</p>
-            </div>
+            ></Card>
           </li>
         </ul>
       </div>
