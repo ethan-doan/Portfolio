@@ -1,0 +1,21 @@
+.card {
+  background-color: #e0e0e0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-sizing: border-box;
+  color: #212121;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  padding-left: 5%;
+  padding-right: 5%;
+  transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+  transform: translateY(7.5vh);
+  will-change: transform;
+  width: 100%;
+  z-index: 10;
+}
+
+.previewTitle {
+  font-size: 26px;
+}

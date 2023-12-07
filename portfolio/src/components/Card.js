@@ -3,7 +3,7 @@ import "../styles/Card.css";
 
 function Card({ title, isActive, style, children }) {
   return (
-    <div className={`previewCard ${isActive ? "active" : ""}`} style={style}>
+    <div className={`card ${isActive ? "active" : ""}`} style={style}>
       <p className="previewTitle">{title}</p>
       {isActive && <p className="previewContent">{children}</p>}
     </div>
