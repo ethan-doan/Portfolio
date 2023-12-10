@@ -35,30 +35,19 @@
 .previewTitle {
   background: inherit;
   font-size: 30px;
-  overflow: hidden;
   padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
-  position: sticky;
-  top: 0;
+  position: sticky; /* Makes the title sticky */
+  top: 0; /* Stick to the top */
   z-index: 10;
 }
 
-.previewTitle::after {
-  content: "";
-  display: block;
+.previewTitle:after {
+  content: '';
   position: absolute;
+  bottom: calc((3vh) * -1);
   left: 0;
   right: 0;
-  bottom: 0;
-  height: 2.5vh; /* Height of the fade effect */
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    #e0e0e0
-  ); /* Gradient from transparent to the card's background color */
-  pointer-events: none; /* Prevents the pseudo-element from capturing mouse events */
-}
-
-.previewContent {
-  line-height: 1.5em;
+  height: 3vh; /* Height of the fade effect */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), 50%, #e0e0e0); /* Fading to the content background color */
+  z-index: 5;
 }
