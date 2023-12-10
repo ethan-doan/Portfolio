@@ -1,6 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import AboutMe from "./AboutMe.js";
 import Card from "./Card.js";
+import Education from "./Education.js";
+import Experience from "./Experience.js";
 import "../styles/Navigation.css";
 
 function Navigation() {
@@ -57,11 +60,11 @@ function Navigation() {
             <span className="altFont">01 </span>
             <span className="navFont">About Me</span>
             <Card
-              title="A Little Bit About Me"
+              title="About Me"
               isActive={activeCard === 0}
               style={previewCardStyle}
             >
-              <p>Additional Information About Me...</p>
+              <AboutMe />
             </Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(1)}>
@@ -71,7 +74,9 @@ function Navigation() {
               title="My Work Experience"
               isActive={activeCard === 1}
               style={previewCardStyle}
-            ></Card>
+            >
+              <Experience />
+            </Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(2)}>
             <span className="altFont">03 </span>
@@ -80,7 +85,9 @@ function Navigation() {
               title="Education & Leadership"
               isActive={activeCard === 2}
               style={previewCardStyle}
-            ></Card>
+            >
+              <Education />
+            </Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(3)}>
             <span className="altFont">04 </span>
