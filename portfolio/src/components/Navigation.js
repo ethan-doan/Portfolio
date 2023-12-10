@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe.js";
 import Card from "./Card.js";
 import Education from "./Education.js";
 import Experience from "./Experience.js";
+import Projects from "./Projects.js";
 import "../styles/Navigation.css";
 
 function Navigation() {
@@ -96,7 +97,9 @@ function Navigation() {
               title="Projects I've Worked On"
               isActive={activeCard === 3}
               style={previewCardStyle}
-            ></Card>
+            >
+              <Projects /> 
+            </Card>
           </li>
           <li className="navItem" onClick={() => handleNavItemClick(4)}>
             <span className="altFont">05 </span>
@@ -105,7 +108,9 @@ function Navigation() {
               title="Contact Me"
               isActive={activeCard === 4}
               style={previewCardStyle}
-            ></Card>
+            >
+              contact@ethandoan.com
+            </Card>
           </li>
         </ul>
       </div>
