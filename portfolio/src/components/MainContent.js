@@ -6,7 +6,7 @@ import Contact from "./Contact.js";
 import Education from "./Education.js";
 import Experience from "./Experience.js";
 import Projects from "./Projects.js";
-import "../styles/Navigation.css";
+import "../styles/MainContent.css";
 
 function Navigation() {
   const [contentHeight, setContentHeight] = useState(0);
