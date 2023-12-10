@@ -3,7 +3,7 @@ import "../styles/AboutMe.css";
 
 function AboutMe() {
   return (
-    <div className="aboutMe">
+    <div className="aboutContainer">
       <img
         className="headshot"
         src={require("../images/Headshot.jpg")}

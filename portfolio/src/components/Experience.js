@@ -1,8 +1,9 @@
 import React from "react";
+import "../styles/Experience.css";
 
 function Experience() {
   return (
-    <>
+    <div className="experienceContainer">
       <div>Software Developer</div>
       <div>Gallup</div>
       <div>June 2023 - Present</div>
@@ -116,7 +117,7 @@ function Experience() {
           troubleshooting for a multitude of departments
         </li>
       </ul>
-    </>
+    </div>
   );
 }
 

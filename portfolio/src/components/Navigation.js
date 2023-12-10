@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import AboutMe from "./AboutMe.js";
 import Card from "./Card.js";
+import Contact from "./Contact.js";
 import Education from "./Education.js";
 import Experience from "./Experience.js";
 import Projects from "./Projects.js";
@@ -109,7 +110,7 @@ function Navigation() {
               isActive={activeCard === 4}
               style={previewCardStyle}
             >
-              contact@ethandoan.com
+              <Contact />
             </Card>
           </li>
         </ul>

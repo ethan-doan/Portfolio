@@ -1,8 +1,9 @@
 import React from "react";
+import "../styles/Education.css";
 
 function Education() {
   return (
-    <>
+    <div className="educationContainer">
       <div>Creighton University</div>
       <div>Bachelor of Arts – BA, Computer Science</div>
       <div>
@@ -21,7 +22,7 @@ function Education() {
         Basketball Photographer / Videographer, Baseball Photographer /
         Videographer, Lacrosse
       </div>
-    </>
+    </div>
   );
 }
 
