@@ -4,7 +4,7 @@ import "../styles/Experience.css";
 function Experience() {
   return (
     <div className="experienceContainer">
-      <div>Software Developer</div>
+      <div className="experienceTitle">Software Developer</div>
       <div>Gallup</div>
       <div>June 2023 - Present</div>
       <ul>
@@ -34,7 +34,7 @@ function Experience() {
         </li>
       </ul>
       <hr></hr>
-      <div>Full-Stack Engineer Intern</div>
+      <div className="experienceTitle">Full-Stack Engineer Intern</div>
       <div>Mutual of Omaha</div>
       <div>May 2022 - June 2023</div>
       <ul>
@@ -58,7 +58,7 @@ function Experience() {
         </li>
       </ul>
       <hr></hr>
-      <div>Financial Planning Analyst Intern</div>
+      <div className="experienceTitle">Financial Planning Analyst Intern</div>
       <div>Valmont Industries, Inc.</div>
       <div>January 2022 - May 2022</div>
       <ul>
@@ -83,7 +83,7 @@ function Experience() {
         </li>
       </ul>
       <hr></hr>
-      <div>Finance / Information Technology Intern</div>
+      <div className="experienceTitle">Finance / Information Technology Intern</div>
       <div>Union Pacific Railroad</div>
       <div>August 2021 - January 2022</div>
       <ul>
