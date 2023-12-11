@@ -43,7 +43,7 @@ function Experience() {
           features, effectively streamlining actuary and underwriter workload
         </li>
         <li>
-          - Incorporated 100% coverage unit tests and integration tests to
+          Incorporated 100% coverage unit tests and integration tests to
           ensure correct population of data models and execution of persistence
           logic, leading to a 15% reduction of bugs in production code
         </li>

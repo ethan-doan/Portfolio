@@ -12,3 +12,8 @@ hr {
     margin-bottom: 2.5%;
     margin-top: 2.5%;
 }
+
+ul {
+    padding-left: 20px;
+    text-align: justify;
+}
