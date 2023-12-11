@@ -43,3 +43,8 @@
   background: linear-gradient(to top, rgba(255, 255, 255, 0), 50%, #e0e0e0); /* Fading to the content background color */
   z-index: 5;
 }
+
+ul {
+  padding-left: 20px;
+  text-align: justify;
+}

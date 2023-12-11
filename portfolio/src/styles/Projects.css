@@ -1,3 +1,18 @@
 .projectsContainer {
     padding-top: 3vh;
+    padding-bottom: 3vh;
+    line-height: 28px;
+
 }
+
+.projectsContainer hr {
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+
+.projectsTitle {
+    font-size: 22px;
+    margin-bottom: 1vh;
+    text-align: left;
+}
+
