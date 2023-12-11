@@ -1,13 +1,38 @@
 .aboutContainer {
   padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .description {
   font-family: "Varela Round", sans-serif;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
   text-align: justify;
   width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+  .card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutContainer {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* To align items at the top */
+  } 
+
+  .headshot {
+    height: 50%;
+    width: 50%;
+  }
 }
