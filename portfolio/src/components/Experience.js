@@ -5,15 +5,14 @@ function Experience() {
   return (
     <div className="experienceContainer">
       <div className="experienceTitle">Software Developer</div>
-      <div>Gallup</div>
-      <div>June 2023 - Present</div>
+      <div>Gallup | June 2023 – Present</div>
       <ul>
         <li>
           Develop end-to-end enterprise applications of Gallup's Survey
           Platforms using C#, .NET, and React
         </li>
         <li>
-          Deploy responsive front end web features using TypeScript, JavaScript,
+          Deploy responsive front end web features and components using TypeScript, JavaScript,
           and React based on provided wireframes, business needs, and
           stakeholder feedback
         </li>
@@ -35,8 +34,7 @@ function Experience() {
       </ul>
       <hr></hr>
       <div className="experienceTitle">Full-Stack Engineer Intern</div>
-      <div>Mutual of Omaha</div>
-      <div>May 2022 - June 2023</div>
+      <div>Mutual of Omaha | May 2022 – June 2023</div>
       <ul>
         <li>
           Organized, initiated, and created fully functional front and back end
@@ -59,8 +57,7 @@ function Experience() {
       </ul>
       <hr></hr>
       <div className="experienceTitle">Financial Planning Analyst Intern</div>
-      <div>Valmont Industries, Inc.</div>
-      <div>January 2022 - May 2022</div>
+      <div>Valmont Industries, Inc. | January 2022 – May 2022</div>
       <ul>
         <li>
           Developed machine learning algorithms with Python to forecast the
@@ -84,8 +81,7 @@ function Experience() {
       </ul>
       <hr></hr>
       <div className="experienceTitle">Finance / Information Technology Intern</div>
-      <div>Union Pacific Railroad</div>
-      <div>August 2021 - January 2022</div>
+      <div>Union Pacific Railroad | August 2021 – January 2022</div>
       <ul>
         <li>
           Performed ad-hoc data analysis through Tableau for a wide variety of

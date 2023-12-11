@@ -1,3 +1,19 @@
+.certificationsTitle {
+    padding-bottom: 3vh;
+    font-size: 30px;
+}
+
 .educationContainer {
     padding-top: 3vh;
+    padding-bottom: 3vh;
+    line-height: 26px;
+}
+
+.educationContainer hr {
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+
+.educationTitle {
+    font-size: 22px;
 }

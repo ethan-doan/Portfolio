@@ -84,7 +84,7 @@ function Navigation() {
             <span className="altFont">03 </span>
             <span className="navFont">Education</span>
             <Card
-              title="Education & Leadership"
+              title="Education"
               isActive={activeCard === 2}
               style={previewCardStyle}
             >
