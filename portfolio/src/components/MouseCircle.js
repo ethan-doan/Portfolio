@@ -44,7 +44,9 @@ const MouseCircle = ({ isMouseOutside, activeCard }) => {
       className="circle"
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
     >
-      {(isMouseOutside !== false && activeCard !== null) && <span className="close">close</span>}
+      {isMouseOutside !== false && activeCard !== null && (
+        <span className="close">close</span>
+      )}
     </div>
   );
 };
