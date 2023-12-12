@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/MouseCircle.css";
 
-const MouseCircle = () => {
+const MouseCircle = ({ isMouseOutside, activeCard }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const mousePosition = useRef({ x: 0, y: 0 });
 
@@ -43,7 +43,9 @@ const MouseCircle = () => {
     <div
       className="circle"
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
-    />
+    >
+      {(isMouseOutside !== false && activeCard !== null) && <span className="close">close</span>}
+    </div>
   );
 };
 

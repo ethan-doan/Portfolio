@@ -8,12 +8,19 @@ import Experience from "./Experience.js";
 import Projects from "./Projects.js";
 import "../styles/MainContent.css";
 
-function Navigation() {
+function MainContent({ setIsMouseOutside, activeCard, setActiveCard }) {
   const [contentHeight, setContentHeight] = useState(0);
   const [previewCardPosition, setPreviewCardPosition] = useState("0");
-  const [activeCard, setActiveCard] = useState(null);
 
   useEffect(() => {
+    // Function to handle clicking outside of the cards
+    const handleClickOutside = (event) => {
+      const navContainer = document.querySelector('.navContainer');
+      if (navContainer && !navContainer.contains(event.target)) {
+        setActiveCard(null); // Collapse the card
+      }
+    };
+
     // Function to calculate space occupied by the header
     const calculateHeaderHeight = () => {
       const header = document.getElementsByClassName("header")[0];
@@ -35,12 +42,29 @@ function Navigation() {
       setPreviewCardPosition(newPreviewCardPosition);
     };
 
+    // Add click event listener
+    document.addEventListener('mousedown', handleClickOutside);
+
     window.addEventListener("resize", handleResize);
     handleResize(); // Call initially to set height
 
     // Cleanup listener on component unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [setActiveCard]);
+
+  const handleMouseOver = () => {
+    console.log("Mouse over");
+    setIsMouseOutside(false);
+  };
+  
+  const handleMouseOut = () => {
+    console.log("Mouse out");
+    setIsMouseOutside(true);
+  };
+  
 
   const navContainerStyle = {
     height: `calc(100vh - ${contentHeight}px)`,
@@ -51,12 +75,14 @@ function Navigation() {
   };
 
   const handleNavItemClick = (itemIndex) => {
-    setActiveCard(itemIndex === activeCard ? null : itemIndex);
+    if (activeCard !== itemIndex) {
+      setActiveCard(itemIndex);
+    }
   };
 
   return (
     <>
-      <div className="navContainer" style={navContainerStyle}>
+      <div className="navContainer" style={navContainerStyle} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         <ul className="navBody">
           <li className="navItem" onClick={() => handleNavItemClick(0)}>
             <span className="altFont">01 </span>
@@ -119,4 +145,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default MainContent;

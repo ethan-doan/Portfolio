@@ -4,7 +4,7 @@ import "../styles/Education.css";
 function Education() {
   return (
     <div className="educationContainer">
-      <div class="educationTitle">Creighton University</div>
+      <div className="educationTitle">Creighton University</div>
       <div>Bachelor of Arts – BA, Computer Science</div>
       <div>
         Bachelor of Science in Business Administration – BSBA, Fintech (Finance
