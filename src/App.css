@@ -1,4 +1,5 @@
 .app {
+  background-color: #e0e0e0;
   position: relative;
   overflow: hidden;
 }
@@ -18,8 +19,13 @@
   z-index: 5;
 }
 
+.main-landing-content {
+  width: 100vw;
+  height: 100vh;
+}
+
 .landing-page {
-  background-color: gray;
+  background-color: #9e9e9e;
   position: absolute;
   top: 0;
   left: 0;
