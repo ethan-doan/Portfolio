@@ -20,17 +20,10 @@
 
 .landing-page {
   background-color: gray;
-  width: 100vw;
-  height: 100vh;
-}
-
-.landing-page {
-  background-color: gray;
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  transition: transform 0.0001s ease;
   z-index: 10;
 }

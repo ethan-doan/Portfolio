@@ -15,7 +15,7 @@ function App() {
       // Calculates Transition Progress
       const delta = event.deltaY;
       const progress = Math.min(
-        Math.max(transitionProgress + delta / 750, 0),
+        Math.max(transitionProgress + delta / 3000, 0),
         1
       );
       setTransitionProgress(progress);
