@@ -48,7 +48,7 @@ function App() {
             position: "relative",
           }}
         >
-          <MainLandingContent />
+          <MainLandingContent transitionProgress={transitionProgress} />
         </div>
       </div>
       {transitionProgress >= 1 && (

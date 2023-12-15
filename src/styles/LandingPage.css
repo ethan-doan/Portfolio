@@ -1,8 +1,37 @@
+.discover {
+  font-size: 22px;
+}
+
+.visible {
+  animation: revealAnimation 0.5s ease-out forwards;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+}
+
+@keyframes revealAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .landing-container {
   color: #e0e0e0;
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-bottom: 5vh;
+}
+
+.landing-container .scroll-container {
+  height: 24px;
 }
 
 .landing-title {
@@ -21,45 +50,5 @@
   }
   to {
     transform: translateY(0); /* Move to the center */
-  }
-}
-
-.scroll-container {
-  position: relative;
-  height: 24px; /* Adjust as needed */
-  overflow: hidden;
-}
-
-.scroll-text {
-  font-family: "IBM Plex Mono", monospace;
-  position: absolute;
-  bottom: -100%; /* Start below the container */
-  width: 100%;
-  font-size: 22px; /* Adjust as needed */
-  font-weight: 100px;
-  white-space: nowrap;
-  animation: riseAndExitUp 3s cubic-bezier(0.25, 0.5, 0.25, 1) infinite;
-}
-
-.scroll-text-first {
-  animation-delay: 1s; /* Half of the animation duration */
-}
-
-.scroll-text-second {
-  animation-delay: 2.5s;
-}
-
-@keyframes riseAndExitUp {
-  0%,
-  20% {
-    bottom: -100%;
-  }
-  40%,
-  60% {
-    bottom: 0;
-  }
-  80%,
-  100% {
-    bottom: 100%;
   }
 }
