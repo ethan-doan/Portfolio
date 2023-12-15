@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import LandingPage from "./components/LandingPage.js";
 import MainContent from "./components/MainContent.js";
 import MainLandingContent from "./components/MainLandingContent.js";
+import Navbar from "./components/Navbar.js";
 import "./App.css";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
   return (
     <div className="app">
       <div className="content-wrapper">
+        <Navbar />
         <div
           className="landing-page"
           style={{ transform: `scale(${1 - transitionProgress})` }}

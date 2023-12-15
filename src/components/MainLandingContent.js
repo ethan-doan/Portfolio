@@ -21,7 +21,7 @@ function MainLandingContent({ transitionProgress }) {
           src={require("../images/Headshot.jpg")}
           alt="headshot"
         />
-        <div className={`description ${descriptionReveal}`}>
+        <div className={`description`}>
           I am a passionate, ambitious, and creative Senior at Creighton
           University. I am pursuing a Bachelor's in Computer Science and Fintech
           and am driven to discover the implementations of computer science

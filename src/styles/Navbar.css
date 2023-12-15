@@ -1,0 +1,20 @@
+.navbar-container {
+  font-family: "IBM Plex Mono", monospace;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
