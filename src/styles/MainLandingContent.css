@@ -18,13 +18,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
-  margin: auto;
   height: calc(95vh - 15px - 2vh);
 }
 
 .main-landing-content-container {
   font-family: "IBM Plex Mono", monospace;
+  position: relative;
   width: 100vw;
   height: 100vh;
   font-size: 14px;
