@@ -1,54 +1,30 @@
 .app {
-  background-color: #e0e0e0;
-  overflow: hidden;
 }
 
-.content-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-.main-landing-content {
-  width: 100vw;
-  height: 100vh;
-}
-
-.landing-page {
-  background-color: #212121;
-  display: flex;
-  position: absolute;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 15;
+.minimize-point {
+  width: 100vw; /* Width to Cover Viewport */
+  height: 100vh; /* Height to Cover Viewport */
+  position: absolute; /* Viewport Blank Canvas */
 }
 
 .scroll-text {
-  font-family: "IBM Plex Mono", monospace;
   position: absolute;
   bottom: -100%;
-  width: 100%;
-  font-weight: 100px;
-  white-space: nowrap;
-  animation: riseAndExitUp 3s cubic-bezier(0.25, 0.5, 0.25, 1) infinite;
+  width: 100%; /* Centering */
+  animation: riseAndExitUp 3s cubic-bezier(0.25, 0.5, 0.25, 1) infinite; /* Animation */
 }
 
 .scroll-text-first {
-  animation-delay: 1s; /* Half of the animation duration */
+  animation-delay: 1s; /* Delay */
 }
 
 .scroll-text-second {
-  animation-delay: 2.5s;
+  animation-delay: 2.5s; /* Delay */
 }
 
 .scroll-container {
-  position: relative;
-  overflow: hidden;
+  position: relative; /* Provides Scroll Container Bounds */
+  overflow: hidden; /* Hides Double Text */
 }
 
 @keyframes riseAndExitUp {

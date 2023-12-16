@@ -1,47 +1,41 @@
 .discover {
-  font-size: 22px;
+  font-family: "IBM Plex Mono", monospace; /* Font Family */
+  font-size: 22px; /* Font Size */
 }
 
-.visible {
-  animation: revealAnimation 0.5s ease-out forwards;
+.landing-page-container {
+  color: #e0e0e0; /* Text Color */
+  background-color: #212121; /* Background Color */
+  width: 100vw; /* Width */
+  height: 100vh; /* Height */
+  display: flex; /* Flexbox */
+  /* position: absolute; */ /* Layer On Top Of MainContent */
+  flex-direction: column; /* Align Vertically */
+  overflow: hidden; /* Prevents Overscrolling on Landing Page */
+  text-align: center; /* Center Horizontally */
+  justify-content: center; /* Center Vertically */
+  /* transition: transform 0.5s ease; */
+  z-index: 15;
 }
 
-.hidden {
-  opacity: 0;
-  transform: translateY(10px);
-  visibility: hidden;
-}
-
-@keyframes revealAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.landing-container {
-  color: #e0e0e0;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  padding-bottom: 5vh;
-}
-
-.landing-container .scroll-container {
-  height: 24px;
+.landing-page-container .scroll-container {
+  height: 24px; /* Height */
 }
 
 .landing-title {
-  font-size: 150px;
-  transform: translateY(100vh);
-  animation-name: riseAnimation;
-  animation-delay: 0.25s;
-  animation-duration: 1s;
-  animation-timing-function: cubic-bezier(0.1, 0.1, 0.001, 1);
-  animation-fill-mode: forwards;
+  font-family: "Roboto", sans-serif; /* Font Family */
+  font-size: 150px; /* Font Size */
+  transform: translateY(100vh); /* Start Off Screen */
+  animation-name: riseAnimation; /* Rise */
+  animation-delay: 0.25s; /* Animation Delay for Reload */
+  animation-duration: 1s; /* Animation Duration */
+  animation-timing-function: cubic-bezier(
+    0.1,
+    0.1,
+    0.001,
+    1
+  ); /* Snappy Animation Curve */
+  animation-fill-mode: forwards; /* Keeps Title After Animation */
 }
 
 @keyframes riseAnimation {

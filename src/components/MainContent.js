@@ -1,57 +1,36 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import LandingPage from "./LandingPage.js";
-import MainLandingContent from "./MainLandingContent";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.js";
 import "../styles/MainContent.css";
 
-function MainContent() {
-  const [transitionProgress, setTransitionProgress] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = (event) => {
-      // Check if the user is at the top of the page
-      if (window.scrollY <= 1) {
-        // Calculates Transition Progress based on scroll direction
-        const delta = event.deltaY;
-        let newProgress = transitionProgress + delta / 3000;
-
-        // Clamp newProgress between 0 and 1
-        newProgress = Math.min(Math.max(newProgress, 0), 1);
-
-        // Prevent default scrolling if in the middle of the transition
-        if (newProgress > 0 && newProgress < 1) {
-          event.preventDefault();
-        }
-
-        setTransitionProgress(newProgress);
-      }
-    };
-
-    window.addEventListener("wheel", handleScroll, { passive: false });
-    return () => window.removeEventListener("wheel", handleScroll);
-  });
-
+function MainContent({ animationProgress, animationPlayed }) {
   return (
     <div className="main-content-container">
-      <div className="content-wrapper">
-        <Navbar />
-        <div
-          className="landing-page"
-          style={{ transform: `scale(${1 - transitionProgress})` }}
-        >
-          <LandingPage />
-        </div>
-        <div
-          style={{
-            overflow: transitionProgress >= 1 ? "auto" : "hidden",
-            position: "relative",
-          }}
-        >
-          <MainLandingContent transitionProgress={transitionProgress} />
+      <Navbar animationPlayed={animationPlayed} />
+      <div className="main-landing-content-container">
+        {!animationPlayed && (
+          <div className="navbar-placeholder" style={{ height: "5vh" }}></div>
+        )}
+        <img
+          className="headshot"
+          src={require("../images/Headshot.jpg")}
+          alt="headshot"
+        />
+        <div className="description">
+          I am a passionate, ambitious, and creative Senior at Creighton
+          University. I am pursuing a Bachelor's in Computer Science and Fintech
+          and am driven to discover the implementations of computer science
+          towards financial markets. I am actively seeking to further my
+          understanding and proficiency in these areas while building
+          relationships with others.
         </div>
       </div>
-      {transitionProgress >= 1 && <div className="hello">Hello</div>}
+      <div className="scroll-container">
+        <div className="explore">
+          <div className="scroll-text scroll-text-first">Explore</div>
+          <div className="scroll-text scroll-text-second">Explore</div>
+        </div>
+      </div>
+      {animationProgress >= 1 && <div className="hello">Hello</div>}
     </div>
   );
 }

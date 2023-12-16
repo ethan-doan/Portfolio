@@ -1,13 +1,17 @@
 import React from "react";
 import "../styles/Navbar.css";
 
-function Navbar() {
+function Navbar({ animationPlayed }) {
   return (
-    <div className="navbar-container">
-      <div className="nav-item">
-        <div>Ethan Doan</div>
-        <div>Menu</div>
-      </div>
+    <div
+      className="navbar-container"
+      style={{
+        position: animationPlayed ? "sticky" : "",
+        top: animationPlayed ? "0" : "",
+      }}
+    >
+      <div className="nav-item">Ethan Doan</div>
+      <div className="nav-item">Menu</div>
     </div>
   );
 }
