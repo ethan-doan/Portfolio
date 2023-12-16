@@ -4,14 +4,6 @@
   margin-top: 2.5vh;
 }
 
-.content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-}
-
 .explore {
   text-align: center;
 }
@@ -24,6 +16,7 @@
 .landing-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 50vw;
   margin: auto;

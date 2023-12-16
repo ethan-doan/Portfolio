@@ -16,22 +16,21 @@ function MainLandingContent({ transitionProgress }) {
   return (
     <div className="main-landing-content-container">
       <div className="landing-content">
-        <div className="content-wrapper">
-          <img
-            className="headshot"
-            src={require("../images/Headshot.jpg")}
-            alt="headshot"
-          />
-          <div className={`description`}>
-            I am a passionate, ambitious, and creative Senior at Creighton
-            University. I am pursuing a Bachelor's in Computer Science and Fintech
-            and am driven to discover the implementations of computer science
-            towards financial markets. I am actively seeking to further my
-            understanding and proficiency in these areas while building
-            relationships with others.
-          </div>
+        <img
+          className="headshot"
+          src={require("../images/Headshot.jpg")}
+          alt="headshot"
+        />
+        <div className={`description`}>
+          I am a passionate, ambitious, and creative Senior at Creighton
+          University. I am pursuing a Bachelor's in Computer Science and Fintech
+          and am driven to discover the implementations of computer science
+          towards financial markets. I am actively seeking to further my
+          understanding and proficiency in these areas while building
+          relationships with others.
+        </div>
 
-          {/*
+        {/*
           <div className="description">
             I have been fortunate enough to gain experience through multiple
             internships where I have been able to implement my studies in practice
@@ -41,7 +40,6 @@ function MainLandingContent({ transitionProgress }) {
             the remainder of my website to learn more about what I have been up
             to.
           </div> */}
-        </div>
       </div>
       <div className="scroll-container">
         <div className="explore">
