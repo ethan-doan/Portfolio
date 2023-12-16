@@ -1,6 +1,14 @@
 .description {
+  width: 100%;
   text-align: justify;
   margin-top: 2.5vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
 }
 
 .explore {
@@ -8,17 +16,16 @@
 }
 
 .headshot {
-  width: 50vw;
+  height: 500px;
+  width: 500px;
 }
 
 .landing-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 50vw;
-  margin-right: 25vw;
-  margin-left: 25vw;
+  margin: auto;
   height: calc(95vh - 15px - 2vh);
 }
 
