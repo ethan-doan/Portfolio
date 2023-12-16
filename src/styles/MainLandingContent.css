@@ -1,0 +1,32 @@
+.description {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  line-height: 20px;
+  text-align: justify; /* Clean Formatting */
+  text-align-last: center;
+  width: 500px; /* Same Width as Headshot */
+}
+
+.explore {
+  text-align: center; /* Center Horizontally */
+}
+
+.headshot {
+  height: 500px; /* Height */
+  width: 500px; /* Width */
+}
+
+.main-landing-content-container {
+  width: 100vw; /* Width */
+  height: calc(95vh - 20px - 2vh); /* Height */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Align Items Vertically */
+  justify-content: center; /* Center Vertically */
+  align-items: center; /* Center Horizontally */
+}
+
+.main-content-container .scroll-container {
+  height: 15px;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}

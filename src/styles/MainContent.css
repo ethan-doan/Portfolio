@@ -1,42 +1,5 @@
-.description {
-  padding-top: 2.5vh;
-  padding-bottom: 2.5vh;
-  text-align: justify; /* Clean Formatting */
-  width: 500px; /* Same Width as Headshot */
-}
-
-.explore {
-  text-align: center; /* Center Horizontally */
-}
-
-.headshot {
-  height: 500px; /* Height */
-  width: 500px; /* Width */
-}
-
 .main-content-container {
   font-family: "IBM Mono Space", monospace; /* Font Family */
   color: #212121; /* Text Color */
   font-size: 14px; /* Text Size */
-  line-height: 18px;
-}
-
-.main-landing-content-container {
-  width: 100vw; /* Width */
-  height: calc(95vh - 15px - 2vh); /* Height */
-  display: flex; /* Flexbox */
-  flex-direction: column; /* Align Items Vertically */
-  justify-content: center; /* Center Vertically */
-  align-items: center; /* Center Horizontally */
-}
-
-.main-content-container .scroll-container {
-  height: 15px;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-}
-
-.hello {
-  width: 100vw;
-  height: 100vh;
 }
