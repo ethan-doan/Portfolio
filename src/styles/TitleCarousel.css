@@ -1,0 +1,27 @@
+.title-carousel-container {
+  font-family: Roboto, sans serif;
+  font-size: calc(25vh);
+  width: 100vw;
+  height: 30vh;
+  padding-bottom: 1.5vh;
+  padding-top: 1.5vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel {
+  animation: slide 75s linear infinite;
+}
+
+.title-item {
+  padding: 3vw;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
