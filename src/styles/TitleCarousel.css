@@ -3,8 +3,8 @@
   font-size: calc(25vh);
   width: 100vw;
   height: 30vh;
-  padding-bottom: 1.5vh;
-  padding-top: 1.5vh;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
   display: flex;
   overflow: hidden;
 }

@@ -10,7 +10,7 @@ function MainLandingContent({ animationPlayed }) {
         )}
         <img
           className="headshot"
-          src={require("../images/Headshot.jpg")}
+          src={require("../images/HeadshotColor.jpg")}
           alt="headshot"
         />
         <div className="description">
@@ -19,7 +19,7 @@ function MainLandingContent({ animationPlayed }) {
           and am driven to discover the implementations of computer science
           towards financial markets. I am actively seeking to further my
           understanding and proficiency in these areas while building
-          relationships with others.
+          relationships with others. Explore to see what I have been up to!
         </div>
       </div>
       <div className="scroll-container">

@@ -1,4 +1,5 @@
 import React from "react";
+import ExperiencePreview from "./ExperiencePreview.js";
 import MainLandingContent from "./MainLandingContent.js";
 import Navbar from "./Navbar.js";
 import TitleCarousel from "./TitleCarousel.js";
@@ -9,7 +10,12 @@ function MainContent({ animationProgress, animationPlayed }) {
     <div className="main-content-container">
       <Navbar animationPlayed={animationPlayed} />
       <MainLandingContent animationPlayed={animationPlayed} />
-      {animationProgress >= 1 && <TitleCarousel title={"Experience"} />}
+      {animationProgress >= 1 && (
+        <>
+          <TitleCarousel title={"Experience"} />
+          <ExperiencePreview />
+        </>
+      )}
     </div>
   );
 }
