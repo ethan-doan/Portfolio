@@ -1,4 +1,13 @@
-.app {
+@media (max-width: 1200px) {
+  .app {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app {
+    font-size: 14px;
+  }
 }
 
 .minimize-point {

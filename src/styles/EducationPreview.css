@@ -8,9 +8,21 @@
 
 @media (max-width: 1200px) {
   .education-preview-container {
-    width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .education-content-item-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .education-content-item-title {
+    font-size: 26px;
+    line-height: 30px;
   }
 }
 
@@ -19,15 +31,13 @@
   padding-bottom: 2.5vh;
 }
 
-.education-content-item-title {
-  font-size: 26px;
-  line-height: 30px;
-  padding-bottom: 1%;
-}
-
 .certifications-item {
   display: flex;
   flex-direction: row;
+}
+
+.education-content-item-title {
+  padding-bottom: 1%;
 }
 
 .certifications-title {

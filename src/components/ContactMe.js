@@ -25,7 +25,7 @@ function ContactMe() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://www.linkedin.com/in/ethandoan20/
+              linkedin.com/in/ethandoan20/
             </a>
           </div>
         </div>
@@ -38,7 +38,7 @@ function ContactMe() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://github.com/ethan-doan/
+              github.com/ethan-doan/
             </a>
           </div>
         </div>

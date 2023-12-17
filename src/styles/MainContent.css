@@ -1,7 +1,6 @@
 .main-content-container {
   font-family: "IBM Mono Space", monospace; /* Font Family */
   color: #212121; /* Text Color */
-  font-size: 14px; /* Text Size */
 }
 
 .disable-scroll {

@@ -47,7 +47,7 @@
   gap: 2.5%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .experience-page-content {
     flex-direction: column;
   }
@@ -61,7 +61,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .experience-page-content {
     flex-direction: row;
   }
