@@ -2,7 +2,7 @@
   font-family: Roboto, sans serif;
   font-size: calc(25vh);
   width: 100vw;
-  height: 30vh;
+  height: fit-content;
   padding-bottom: 3vh;
   padding-top: 3vh;
   display: flex;

@@ -14,6 +14,7 @@ function MainContent({ animationProgress, animationPlayed }) {
         <>
           <TitleCarousel title={"Experience"} />
           <ExperiencePreview />
+          <TitleCarousel title={"Projects"} />
         </>
       )}
     </div>

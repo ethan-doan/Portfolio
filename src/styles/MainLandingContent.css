@@ -18,7 +18,7 @@
 
 .main-landing-content-container {
   width: 100vw; /* Width */
-  height: calc(95vh - 20px - 2vh); /* Height */
+  height: calc(95vh - 15px - 2vh); /* Height */
   display: flex; /* Flexbox */
   flex-direction: column; /* Align Items Vertically */
   justify-content: center; /* Center Vertically */
@@ -29,4 +29,15 @@
   height: 15px;
   margin-top: 1vh;
   margin-bottom: 1vh;
+}
+
+@media (max-width: 600px) {
+  .description {
+    width: 80vw;
+  }
+
+  .headshot {
+    width: 80vw;
+    height: auto;
+  }
 }
