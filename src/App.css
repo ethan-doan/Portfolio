@@ -5,6 +5,7 @@
   width: 100vw; /* Width to Cover Viewport */
   height: 100vh; /* Height to Cover Viewport */
   position: absolute; /* Viewport Blank Canvas */
+  transition: transform 0.25s ease; /* Adjust duration and easing as needed */
 }
 
 .scroll-text {
