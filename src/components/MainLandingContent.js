@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/MainLandingContent.css";
 
-function MainLandingContent({ animationPlayed }) {
+function MainLandingContent({ isAnimationComplete }) {
   return (
     <>
       <div className="main-landing-content-container">
-        {!animationPlayed && (
+        {!isAnimationComplete && (
           <div className="navbar-placeholder" style={{ height: "5vh" }}></div>
         )}
         <img

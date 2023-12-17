@@ -7,14 +7,14 @@ import Navbar from "./Navbar.js";
 import TitleCarousel from "./TitleCarousel.js";
 import "../styles/MainContent.css";
 
-function MainContent({ animationProgress, animationPlayed }) {
+function MainContent({ animationProgress, isAnimationComplete }) {
   const [altScreen, setAltScreen] = useState("");
 
   return (
     <div className="main-content-container">
-      <Navbar animationPlayed={animationPlayed} altScreen={altScreen} />
-      <MainLandingContent animationPlayed={animationPlayed} />
-      {animationPlayed && altScreen === "" && (
+      <Navbar isAnimationComplete={isAnimationComplete} altScreen={altScreen} />
+      <MainLandingContent isAnimationComplete={isAnimationComplete} />
+      {isAnimationComplete && altScreen === "" && (
         <>
           <TitleCarousel title={"Experience"} />
           <ExperiencePreview

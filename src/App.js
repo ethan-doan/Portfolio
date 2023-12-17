@@ -51,7 +51,7 @@ function App() {
       )}
       <MainContent
         animationProgress={animationProgress}
-        animationPlayed={isAnimationComplete}
+        isAnimationComplete={isAnimationComplete}
       />
     </div>
   );
