@@ -3,3 +3,7 @@
   color: #212121; /* Text Color */
   font-size: 14px; /* Text Size */
 }
+
+.disable-scroll {
+  overflow: hidden;
+}

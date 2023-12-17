@@ -1,0 +1,72 @@
+.experience-preview-item {
+  background-color: #212121;
+  color: #f5f5f5;
+  padding: 3%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* For Corner Styling */
+  transition: transform 0.25s ease;
+}
+
+.experience-preview-item::before,
+.experience-preview-item::after {
+  content: "";
+  position: absolute;
+  width: 10px; /* Length of corner lines, adjust as needed */
+  height: 10px; /* Height of corner lines, adjust as needed */
+  border: 2px solid #f5f5f5; /* Color and thickness of corner lines */
+}
+
+.experience-preview-item::before {
+  top: 10px;
+  left: 10px;
+  border-bottom: none;
+  border-right: none;
+}
+
+.experience-preview-item::after {
+  bottom: 10px;
+  right: 10px;
+  border-top: none;
+  border-left: none;
+}
+
+.experience-preview-item:hover {
+  transform: scale(1.05);
+}
+
+.experience-title {
+  font-size: 26px;
+  padding-bottom: 1%;
+}
+
+@media (max-width: 600px) {
+  .experience-title {
+    font-size: 20px;
+  }
+}
+
+.experience-timeline {
+  padding-bottom: 1%;
+}
+
+.experience-description {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  transition-delay: 0.5s;
+  line-height: 20px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.experience-description.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.more-info {
+  width: 100%;
+  margin-top: auto;
+  text-align: right;
+}

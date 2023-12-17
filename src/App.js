@@ -26,7 +26,7 @@ function App() {
           progress = Math.min(Math.max(progress, 0), 1);
 
           // Prevent Default Scrolling During Animation
-          if (progress > 0 && progress < 1) {
+          if (progress > 0 && progress <= 1) {
             event.preventDefault();
           }
 
