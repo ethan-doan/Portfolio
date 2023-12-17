@@ -13,7 +13,7 @@ function Navbar({ isAnimationComplete, altScreen }) {
       }}
     >
       <div className="nav-item">Ethan Doan</div>
-      <div className="nav-item">Menu</div>
+      {/* <div className="nav-item">Menu</div> */}
     </div>
   );
 }
