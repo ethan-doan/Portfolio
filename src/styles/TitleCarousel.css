@@ -3,8 +3,8 @@
   font-size: calc(25vh);
   width: 100vw;
   height: fit-content;
-  padding-bottom: 3vh;
-  padding-top: 3vh;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
   display: flex;
   overflow: hidden;
   white-space: nowrap;

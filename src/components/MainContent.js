@@ -4,6 +4,7 @@ import ExperiencePage from "./ExperiencePage.js";
 import ExperiencePreview from "./ExperiencePreview.js";
 import MainLandingContent from "./MainLandingContent.js";
 import Navbar from "./Navbar.js";
+import ProjectsPreview from "./ProjectsPreview.js";
 import TitleCarousel from "./TitleCarousel.js";
 import "../styles/MainContent.css";
 
@@ -22,6 +23,7 @@ function MainContent({ animationProgress, isAnimationComplete }) {
             setAltScreen={setAltScreen}
           />
           <TitleCarousel title={"Projects"} />
+          <ProjectsPreview />
         </>
       )}
       {altScreen !== "" &&
