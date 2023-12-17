@@ -27,6 +27,7 @@ function MainContent({ animationProgress, isAnimationComplete }) {
           <ProjectsPreview />
           <TitleCarousel title={"Education"} />
           <EducationPreview />
+          <TitleCarousel title={"Contact Me"} />
         </>
       )}
       {altScreen !== "" &&

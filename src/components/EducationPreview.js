@@ -5,7 +5,9 @@ function EducationPreview() {
   return (
     <div className="education-preview-container">
       <div className="education-content-item">
-        <div className="education-content-item-title">Creighton University</div>
+        <div className="education-content-item-title">
+          Creighton University | Omaha, Nebraska
+        </div>
         <div className="education-content-item-degree">
           Bachelor of Arts – BA, Computer Science
         </div>
@@ -25,7 +27,7 @@ function EducationPreview() {
       </div>
       <div className="education-content-item">
         <div className="education-content-item-title">
-          University High School
+          University High School | Irvine, California
         </div>
         <div className="education-content-item-degree">High School Diploma</div>
         <div className="education-content-item-tenure">
