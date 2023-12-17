@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   position: relative; /* For Corner Styling */
+  transition: transform 0.25s ease;
 }
 
 .experience-description {
@@ -85,4 +86,8 @@
   right: 10px;
   border-top: none;
   border-left: none;
+}
+
+.experience-preview-item:hover {
+  transform: scale(1.05);
 }
