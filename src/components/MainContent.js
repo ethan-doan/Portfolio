@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import EducationPreview from "./EducationPreview.js";
 import ExperiencePage from "./ExperiencePage.js";
 import ExperiencePreview from "./ExperiencePreview.js";
 import MainLandingContent from "./MainLandingContent.js";
@@ -24,6 +25,8 @@ function MainContent({ animationProgress, isAnimationComplete }) {
           />
           <TitleCarousel title={"Projects"} />
           <ProjectsPreview />
+          <TitleCarousel title={"Education"} />
+          <EducationPreview />
         </>
       )}
       {altScreen !== "" &&
