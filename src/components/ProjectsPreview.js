@@ -11,8 +11,9 @@ function ProjectsPreview() {
         </div>
         <video
           className="bluebox-forum-video"
-          autostart
           autoPlay
+          muted
+          playsInline
           loop
           src={BlueboxForumDemo}
           type="video/mp4"
