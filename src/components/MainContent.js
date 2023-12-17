@@ -14,9 +14,16 @@ function MainContent({ animationProgress, isAnimationComplete }) {
     <div className="main-content-container">
       <Navbar isAnimationComplete={isAnimationComplete} altScreen={altScreen} />
       <MainLandingContent isAnimationComplete={isAnimationComplete} />
-      <TitleCarousel title={"Experience"} />
-      <ExperiencePreview altScreen={altScreen} setAltScreen={setAltScreen} />
-      <TitleCarousel title={"Projects"} />
+      {isAnimationComplete && (
+        <>
+          <TitleCarousel title={"Experience"} />
+          <ExperiencePreview
+            altScreen={altScreen}
+            setAltScreen={setAltScreen}
+          />
+          <TitleCarousel title={"Projects"} />
+        </>
+      )}
       {altScreen !== "" &&
         (altScreen === "gallup" ? (
           <ExperiencePage

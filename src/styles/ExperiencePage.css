@@ -44,16 +44,38 @@
   padding-left: 2.5vw; /* Edge Formatting */
   padding-right: 2.5vw; /* Edge Formatting */
   display: flex;
-  flex-direction: row;
   gap: 2.5%;
 }
 
-.experience-page-details {
-  width: 40%;
+@media (max-width: 1000px) {
+  .experience-page-content {
+    flex-direction: column;
+  }
+
+  .experience-page-details {
+    width: 100%;
+  }
+
+  .experience-page-description {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .experience-page-content {
+    flex-direction: row;
+  }
+
+  .experience-page-details {
+    width: 40%;
+  }
+
+  .experience-page-description {
+    width: 60%;
+  }
 }
 
 .experience-page-description {
-  width: 60%;
   text-align: justify;
 }
 

@@ -22,10 +22,10 @@ function ExperiencePage({
           <path
             d="M30 10 L10 25 L30 40"
             stroke="#f5f5f5"
-            stroke-width="3"
+            strokeWidth="3"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
         <span className="back-button-text">Return</span>
@@ -56,7 +56,7 @@ function ExperiencePage({
         </div>
         <div className="experience-page-description">
           <div className="experience-page-description-header">
-            Responsibilities
+            Responsibilities:
           </div>
           <hr />
           {children}
