@@ -10,31 +10,64 @@ function App() {
   const [altScreen, setAltScreen] = useState("");
   const [animationProgress, setAnimationProgress] = useState(0);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
+  const [lastTouchY, setLastTouchY] = useState(0);
+
+  const updateAnimationProgress = (delta) => {
+    const newAnimationProgress = Math.min(
+      window.innerHeight,
+      Math.max(0, animationProgress + delta)
+    );
+    setAnimationProgress(newAnimationProgress);
+
+    if (newAnimationProgress >= window.innerHeight) {
+      setIsAnimationComplete(true);
+    }
+  };
 
   const handleScroll = (event) => {
     if (!isAnimationComplete) {
-      event.preventDefault(); // Prevent default scroll during animation
-      const newAnimationProgress = Math.min(
-        window.innerHeight,
-        Math.max(0, animationProgress + event.deltaY)
-      );
-      setAnimationProgress(newAnimationProgress);
+      event.preventDefault();
+      updateAnimationProgress(event.deltaY);
+    }
+  };
 
-      if (newAnimationProgress >= window.innerHeight) {
-        setIsAnimationComplete(true); // Animation complete, enable normal scrolling
-      }
+  const handleTouchStart = (event) => {
+    if (!isAnimationComplete) {
+      setLastTouchY(event.touches[0].clientY);
+    }
+  };
+
+  const handleTouchMove = (event) => {
+    if (!isAnimationComplete) {
+      event.preventDefault();
+      const touchY = event.touches[0].clientY;
+      const deltaY = lastTouchY - touchY;
+      setLastTouchY(touchY);
+      updateAnimationProgress(deltaY);
     }
   };
 
   useEffect(() => {
     if (!isAnimationComplete) {
       window.addEventListener("wheel", handleScroll, { passive: false });
+      window.addEventListener("touchstart", handleTouchStart, {
+        passive: false,
+      });
+      window.addEventListener("touchmove", handleTouchMove, { passive: false });
     }
 
     return () => {
       window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
     };
-  }, [handleScroll, animationProgress, isAnimationComplete]);
+  }, [
+    handleScroll,
+    handleTouchStart,
+    handleTouchMove,
+    animationProgress,
+    isAnimationComplete,
+  ]);
 
   const scale = isAnimationComplete
     ? 0
