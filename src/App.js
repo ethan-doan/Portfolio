@@ -11,21 +11,12 @@ function App() {
   const [animationProgress, setAnimationProgress] = useState(0);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   const [lastTouchY, setLastTouchY] = useState(0);
-  const [touchSpeed, setTouchSpeed] = useState(0);
 
-  const updateAnimationProgress = (delta, withInertia = false) => {
-    let newAnimationProgress = Math.min(
+  const updateAnimationProgress = (delta) => {
+    const newAnimationProgress = Math.min(
       window.innerHeight,
       Math.max(0, animationProgress + delta)
     );
-
-    if (withInertia) {
-      newAnimationProgress = Math.min(
-        window.innerHeight,
-        Math.max(0, newAnimationProgress)
-      );
-    }
-
     setAnimationProgress(newAnimationProgress);
 
     if (newAnimationProgress >= window.innerHeight) {
@@ -43,7 +34,6 @@ function App() {
   const handleTouchStart = (event) => {
     if (!isAnimationComplete) {
       setLastTouchY(event.touches[0].clientY);
-      setTouchSpeed(0);
     }
   };
 
@@ -52,23 +42,8 @@ function App() {
       event.preventDefault();
       const touchY = event.touches[0].clientY;
       const deltaY = lastTouchY - touchY;
-      setTouchSpeed(deltaY);
       setLastTouchY(touchY);
       updateAnimationProgress(deltaY);
-    }
-  };
-
-  const handleTouchEnd = () => {
-    if (!isAnimationComplete && touchSpeed !== 0) {
-      let inertia = touchSpeed;
-      const applyInertia = () => {
-        if (Math.abs(inertia) > 1) {
-          updateAnimationProgress(inertia, true);
-          inertia *= 0.95; // Inertia decay factor
-          requestAnimationFrame(applyInertia);
-        }
-      };
-      requestAnimationFrame(applyInertia);
     }
   };
 
@@ -79,20 +54,17 @@ function App() {
         passive: false,
       });
       window.addEventListener("touchmove", handleTouchMove, { passive: false });
-      window.addEventListener("touchend", handleTouchEnd, { passive: false });
     }
 
     return () => {
       window.removeEventListener("wheel", handleScroll);
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchmove", handleTouchMove);
-      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, [
     handleScroll,
     handleTouchStart,
     handleTouchMove,
-    handleTouchEnd,
     animationProgress,
     isAnimationComplete,
   ]);
