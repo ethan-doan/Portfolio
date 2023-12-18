@@ -1,3 +1,7 @@
+.app {
+  font-family: "IBM Plex Mono", monospace;
+}
+
 @media (max-width: 1200px) {
   .app {
     font-size: 12px;

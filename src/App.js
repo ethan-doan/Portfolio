@@ -1,10 +1,13 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ExperiencePage from "./components/ExperiencePage.js";
 import LandingPage from "./components/LandingPage.js";
 import MainContent from "./components/MainContent.js";
 import "./App.css";
 
 function App() {
+  const [altScreen, setAltScreen] = useState("");
   const [animationProgress, setAnimationProgress] = useState(0);
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
@@ -31,29 +34,46 @@ function App() {
     return () => {
       window.removeEventListener("wheel", handleScroll);
     };
-  }, [animationProgress, isAnimationComplete]);
+  }, [handleScroll, animationProgress, isAnimationComplete]);
 
   const scale = isAnimationComplete
     ? 0
     : Math.max(0, 1 - animationProgress / window.innerHeight);
 
   return (
-    <div className="app">
-      {!isAnimationComplete && (
-        <div
-          className="minimize-point"
-          style={{
-            transform: `scale(${scale})`,
-          }}
-        >
-          <LandingPage />
-        </div>
-      )}
-      <MainContent
-        animationProgress={animationProgress}
-        isAnimationComplete={isAnimationComplete}
-      />
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                {!isAnimationComplete && (
+                  <div
+                    className="minimize-point"
+                    style={{
+                      transform: `scale(${scale})`,
+                    }}
+                  >
+                    <LandingPage />
+                  </div>
+                )}
+                <MainContent
+                  altScreen={altScreen}
+                  setAltScreen={setAltScreen}
+                  animationProgress={animationProgress}
+                  isAnimationComplete={isAnimationComplete}
+                />
+              </>
+            }
+          />
+          <Route
+            path="/experience/:experienceId"
+            element={<ExperiencePage />}
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
