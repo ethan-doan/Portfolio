@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/github.io/ethan-doan.github.io/static/css/main.6f97338e.css",
+    "main.js": "/github.io/ethan-doan.github.io/static/js/main.7856088f.js",
+    "static/js/787.f634ae44.chunk.js": "/github.io/ethan-doan.github.io/static/js/787.f634ae44.chunk.js",
+    "static/media/BlueboxForumDemo.mp4": "/github.io/ethan-doan.github.io/static/media/BlueboxForumDemo.e46cb17638f0fab9b8c2.mp4",
+    "static/media/HeadshotColor.jpg": "/github.io/ethan-doan.github.io/static/media/HeadshotColor.4940d2a936f3b11b2a4b.jpg",
+    "index.html": "/github.io/ethan-doan.github.io/index.html",
+    "main.6f97338e.css.map": "/github.io/ethan-doan.github.io/static/css/main.6f97338e.css.map",
+    "main.7856088f.js.map": "/github.io/ethan-doan.github.io/static/js/main.7856088f.js.map",
+    "787.f634ae44.chunk.js.map": "/github.io/ethan-doan.github.io/static/js/787.f634ae44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f97338e.css",
+    "static/js/main.7856088f.js"
+  ]
+}
