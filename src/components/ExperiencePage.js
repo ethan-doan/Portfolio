@@ -16,7 +16,7 @@ function ExperiencePage() {
     <>
       <Navbar invert={true} />
       {experienceId === "gallup" ? (
-        <div className="experience-page-test-container">
+        <div className="experience-page-container">
           <a onClick={goBack} className="back-button">
             <svg
               width="20"
