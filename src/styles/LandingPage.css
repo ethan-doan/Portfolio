@@ -24,7 +24,6 @@
 
 .landing-title {
   font-family: "Roboto", sans-serif; /* Font Family */
-  font-size: 150px; /* Font Size */
   transform: translateY(100vh); /* Start Off Screen */
   animation-name: riseAnimation; /* Rise */
   animation-delay: 0.25s; /* Animation Delay for Reload */
@@ -36,6 +35,18 @@
     1
   ); /* Snappy Animation Curve */
   animation-fill-mode: forwards; /* Keeps Title After Animation */
+}
+
+@media (max-width: 1000px) {
+  .landing-title {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .landing-title {
+    font-size: 150px;
+  }
 }
 
 @keyframes riseAnimation {
