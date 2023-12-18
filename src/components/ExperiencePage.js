@@ -95,7 +95,7 @@ function ExperiencePage() {
           </div>
         </div>
       ) : experienceId === "mutual-of-omaha" ? (
-        <div className="experience-page-test-container">
+        <div className="experience-page-container">
           <a onClick={goBack} className="back-button">
             <svg
               width="20"
@@ -169,7 +169,7 @@ function ExperiencePage() {
           </div>
         </div>
       ) : experienceId === "valmont-industries" ? (
-        <div className="experience-page-test-container">
+        <div className="experience-test-container">
           <a onClick={goBack} className="back-button">
             <svg
               width="20"
@@ -242,7 +242,7 @@ function ExperiencePage() {
           </div>
         </div>
       ) : experienceId === "union-pacific-railroad" ? (
-        <div className="experience-page-test-container">
+        <div className="experience-test-container">
           <a onClick={goBack} className="back-button">
             <svg
               width="20"
