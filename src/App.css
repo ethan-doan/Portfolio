@@ -54,3 +54,15 @@
     bottom: 100%;
   }
 }
+
+.reveal-content {
+  opacity: 0; /* Invisible on Load */
+  animation: reveal 1.5s ease forwards; /* Reveal Animation */
+  animation-delay: 0.25s; /* Animation Delay */
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+  }
+}

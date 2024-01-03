@@ -14,8 +14,10 @@ function MainContent() {
 
   return (
     <div className="main-content-container">
-      <Navbar altScreen={altScreen} setAltScreen={setAltScreen} />
-      <MainLandingContent />
+      <div className="reveal-content">
+        <Navbar altScreen={altScreen} setAltScreen={setAltScreen} />
+        <MainLandingContent />
+      </div>
       <TitleCarousel title={"Experience"} />
       <ExperiencePreview altScreen={altScreen} setAltScreen={setAltScreen} />
       <TitleCarousel title={"Projects"} />

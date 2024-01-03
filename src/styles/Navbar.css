@@ -34,7 +34,7 @@
   flex-direction: row; /* Align Items Horizontally */
   justify-content: space-between; /* Item Spacing Between */
   align-items: center; /* Vertical Item Centering */
-  z-index: 5;
+  z-index: 5; /* Z Positioning */
 }
 
 .nav-item {
