@@ -1,6 +1,6 @@
 .title-carousel-container {
   font-family: Roboto, sans serif;
-  font-size: calc(25vh);
+  font-size: 25vh;
   width: 100vw;
   height: fit-content;
   padding-bottom: 5vh;
@@ -8,6 +8,12 @@
   display: flex;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .title-carousel-container {
+    font-size: 15vh;
+  }
 }
 
 .carousel {
