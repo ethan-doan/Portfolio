@@ -7,34 +7,6 @@
   overflow: auto;
 }
 
-.back-button {
-  text-decoration: none;
-  color: #f5f5f5;
-  display: flex;
-  position: relative; /* Hiding Arrow Under Text */
-  align-items: center;
-  padding-left: 2.5vw;
-  cursor: pointer; /* Optional: changes the cursor on hover */
-}
-
-.back-button svg {
-  position: absolute;
-  opacity: 0; /* Initially hide the SVG */
-  transition: opacity 0.3s ease; /* Smooth transition for the opacity change */
-}
-
-.back-button-text {
-  transition: transform 0.3s ease; /* Transition for the sliding effect */
-}
-
-.back-button:hover svg {
-  opacity: 1; /* Show the SVG on hover */
-}
-
-.back-button:hover .back-button-text {
-  transform: translateX(25px); /* Slide the text to the right on hover */
-}
-
 .experience-page-exit {
   padding-left: 2.5vw;
   padding-right: 2.5vw;

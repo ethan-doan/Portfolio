@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import ExperiencePreviewCard from "./ExperiencePreviewCard.js";
 import "../styles/ExperiencePreview.css";
 
-function ExperiencePreview({ altScreen, setAltScreen }) {
+function ExperiencePreview({ setAltScreen }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -46,6 +46,7 @@ function ExperiencePreview({ altScreen, setAltScreen }) {
       <div className="experience-preview-grid">
         <Link
           to="/experience/gallup"
+          onClick={() => setAltScreen(true)}
           style={{ textDecoration: "none", color: "#f5f5f5" }}
         >
           <ExperiencePreviewCard
@@ -67,6 +68,7 @@ function ExperiencePreview({ altScreen, setAltScreen }) {
         </Link>
         <Link
           to={"/experience/mutual-of-omaha"}
+          onClick={() => setAltScreen(true)}
           style={{ textDecoration: "none", color: "#f5f5f5" }}
         >
           <ExperiencePreviewCard
@@ -88,6 +90,7 @@ function ExperiencePreview({ altScreen, setAltScreen }) {
         </Link>
         <Link
           to={"/experience/valmont-industries"}
+          onClick={() => setAltScreen(true)}
           style={{ textDecoration: "none", color: "#f5f5f5" }}
         >
           <ExperiencePreviewCard
@@ -109,6 +112,7 @@ function ExperiencePreview({ altScreen, setAltScreen }) {
         </Link>
         <Link
           to={"/experience/union-pacific-railroad"}
+          onClick={() => setAltScreen(true)}
           style={{ textDecoration: "none", color: "#f5f5f5" }}
         >
           <ExperiencePreviewCard

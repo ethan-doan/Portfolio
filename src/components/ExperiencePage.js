@@ -1,40 +1,17 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Navbar from "./Navbar";
 import TitleCarousel from "./TitleCarousel";
 import "../styles/ExperiencePage.css";
 
 function ExperiencePage() {
   const { experienceId } = useParams(); // Get the URL parameter
-  const navigate = useNavigate();
-
-  const goBack = () => {
-    navigate(-1); // Navigates to the previous page
-  };
 
   return (
     <>
       <Navbar invert={true} />
       {experienceId === "gallup" ? (
         <div className="experience-page-container">
-          <a onClick={goBack} className="back-button">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 50 50"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M30 10 L10 25 L30 40"
-                stroke="#f5f5f5"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="back-button-text">Return</span>
-          </a>
           <TitleCarousel title="Gallup" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
@@ -96,24 +73,6 @@ function ExperiencePage() {
         </div>
       ) : experienceId === "mutual-of-omaha" ? (
         <div className="experience-page-container">
-          <a onClick={goBack} className="back-button">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 50 50"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M30 10 L10 25 L30 40"
-                stroke="#f5f5f5"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="back-button-text">Return</span>
-          </a>
           <TitleCarousel title="Mutual of Omaha" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
@@ -170,24 +129,6 @@ function ExperiencePage() {
         </div>
       ) : experienceId === "valmont-industries" ? (
         <div className="experience-page-container">
-          <a onClick={goBack} className="back-button">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 50 50"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M30 10 L10 25 L30 40"
-                stroke="#f5f5f5"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="back-button-text">Return</span>
-          </a>
           <TitleCarousel title="Valmont Industries" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
@@ -243,24 +184,6 @@ function ExperiencePage() {
         </div>
       ) : experienceId === "union-pacific-railroad" ? (
         <div className="experience-page-container">
-          <a onClick={goBack} className="back-button">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 50 50"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M30 10 L10 25 L30 40"
-                stroke="#f5f5f5"
-                strokeWidth="3"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="back-button-text">Return</span>
-          </a>
           <TitleCarousel title="Union Pacific Railroad" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
