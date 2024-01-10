@@ -1,0 +1,33 @@
+.projects-preview-item {
+  background-color: #212121;
+  color: #f5f5f5;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease;
+}
+
+.projects-preview-item:hover {
+  transform: scale(1.05);
+}
+
+.projects-preview-item-title {
+  padding-bottom: 2.5%;
+}
+
+.projects-video {
+  width: 100%;
+  margin-bottom: 2.5%;
+}
+
+@media (max-width: 1200px) {
+  .projects-preview-item-title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects-preview-item-title {
+    font-size: 26px;
+  }
+}

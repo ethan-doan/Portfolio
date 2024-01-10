@@ -3,7 +3,6 @@
   height: auto;
   margin-left: 25vw;
   margin-right: 25vw;
-  background-color: #212121;
 }
 
 @media (max-width: 1200px) {
@@ -12,28 +11,4 @@
     margin-left: 5vw;
     margin-right: 5vw;
   }
-
-  .projects-preview-item-title {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .projects-preview-item-title {
-    font-size: 26px;
-  }
-}
-
-.projects-preview-item {
-  width: 95%;
-  padding: 3%;
-}
-
-.projects-preview-item-title {
-  color: #f5f5f5;
-  padding-bottom: 2.5%;
-}
-
-.bluebox-forum-video {
-  width: 100%;
 }

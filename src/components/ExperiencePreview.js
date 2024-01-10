@@ -47,7 +47,7 @@ function ExperiencePreview({ setAltScreen }) {
         <Link
           to="/experience/gallup"
           onClick={() => setAltScreen(true)}
-          style={{ textDecoration: "none", color: "#f5f5f5" }}
+          style={{ textDecoration: "none" }}
         >
           <ExperiencePreviewCard
             title="01 Software Developer Intern | Gallup"
@@ -69,7 +69,7 @@ function ExperiencePreview({ setAltScreen }) {
         <Link
           to={"/experience/mutual-of-omaha"}
           onClick={() => setAltScreen(true)}
-          style={{ textDecoration: "none", color: "#f5f5f5" }}
+          style={{ textDecoration: "none" }}
         >
           <ExperiencePreviewCard
             title="02 Full–Stack Software Engineer Intern | Mutual of Omaha"
@@ -91,7 +91,7 @@ function ExperiencePreview({ setAltScreen }) {
         <Link
           to={"/experience/valmont-industries"}
           onClick={() => setAltScreen(true)}
-          style={{ textDecoration: "none", color: "#f5f5f5" }}
+          style={{ textDecoration: "none" }}
         >
           <ExperiencePreviewCard
             title="03 Financial Planning Analyst Intern | Valmont Industries Inc."
@@ -113,7 +113,7 @@ function ExperiencePreview({ setAltScreen }) {
         <Link
           to={"/experience/union-pacific-railroad"}
           onClick={() => setAltScreen(true)}
-          style={{ textDecoration: "none", color: "#f5f5f5" }}
+          style={{ textDecoration: "none" }}
         >
           <ExperiencePreviewCard
             title="04 Finance / Information Technology Intern | Union Pacific Railroad"

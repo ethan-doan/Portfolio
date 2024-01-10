@@ -8,10 +8,10 @@ function ExperiencePage() {
   const { experienceId } = useParams(); // Get the URL parameter
 
   return (
-    <>
+    <div className="experience-page-container">
       <Navbar invert={true} />
       {experienceId === "gallup" ? (
-        <div className="experience-page-container">
+        <>
           <TitleCarousel title="Gallup" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
@@ -63,6 +63,12 @@ function ExperiencePage() {
                   user experience using .NET
                 </li>
                 <li className="experience-page-description-item">
+                  Upheld and implemented web accessibility standards across
+                  Gallup's Survey Platforms, enhancing user experiences for
+                  individuals with disabilities through accessible navigation,
+                  keyboard-friendly controls, and screenreader compatability.
+                </li>
+                <li className="experience-page-description-item">
                   Optimize development efficiency through Agile practices
                   including pair programming, code review, unit/integration
                   testing, and load/stress testing{" "}
@@ -70,9 +76,9 @@ function ExperiencePage() {
               </ul>
             </div>
           </div>
-        </div>
+        </>
       ) : experienceId === "mutual-of-omaha" ? (
-        <div className="experience-page-container">
+        <>
           <TitleCarousel title="Mutual of Omaha" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
@@ -126,9 +132,9 @@ function ExperiencePage() {
               </ul>
             </div>
           </div>
-        </div>
+        </>
       ) : experienceId === "valmont-industries" ? (
-        <div className="experience-page-container">
+        <>
           <TitleCarousel title="Valmont Industries" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
@@ -181,9 +187,9 @@ function ExperiencePage() {
               </ul>
             </div>
           </div>
-        </div>
+        </>
       ) : experienceId === "union-pacific-railroad" ? (
-        <div className="experience-page-container">
+        <>
           <TitleCarousel title="Union Pacific Railroad" invert={true} />
           <div className="experience-page-content">
             <div className="experience-page-details">
@@ -248,9 +254,9 @@ function ExperiencePage() {
               </ul>
             </div>
           </div>
-        </div>
+        </>
       ) : null}
-    </>
+    </div>
   );
 }
 

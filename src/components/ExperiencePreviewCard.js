@@ -3,7 +3,7 @@ import "../styles/ExperiencePreviewCard.css";
 
 function ExperienceCardPreview({ onClick, title, timeline, children }) {
   return (
-    <div className="experience-card-preview-container" onClick={onClick}>
+    <div className="experience-preview-card-container" onClick={onClick}>
       <div className="experience-preview-item">
         <div className="experience-title">{title}</div>
         <div className="experience-timeline">{timeline}</div>

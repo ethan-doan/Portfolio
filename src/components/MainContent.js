@@ -17,9 +17,9 @@ function MainContent() {
       <Navbar altScreen={altScreen} setAltScreen={setAltScreen} />
       <MainLandingContent />
       <TitleCarousel title={"Experience"} />
-      <ExperiencePreview altScreen={altScreen} setAltScreen={setAltScreen} />
+      <ExperiencePreview setAltScreen={setAltScreen} />
       <TitleCarousel title={"Projects"} />
-      <ProjectsPreview />
+      <ProjectsPreview setAltScreen={setAltScreen} />
       <TitleCarousel title={"Education"} />
       <EducationPreview />
       <TitleCarousel title={"Contact Me"} />
