@@ -15,16 +15,8 @@ function ProjectPage() {
         <>
           <TitleCarousel title="Bluebox Forum" invert={true} />
           <div className="project-page-content">
-            <video
-              className="project-page-video"
-              autoPlay
-              muted
-              playsInline
-              loop
-              src={BlueboxForumDemo}
-              type="video/mp4"
-            />
             <div className="project-page-description">
+              <div style={{ fontWeight: "bold" }}>Background</div>
               <div>
                 During my time at Creighton University, I had the opportunity to
                 be involved in the Practicum for International Development as a
@@ -51,12 +43,13 @@ function ProjectPage() {
                 functionalities of the Bluebox. Our project led us to Santiago
                 de los Caballeros in the Dominican Republic, where we had the
                 opportunity to make a direct impact. We visited rural schools,
-                donating Blueboxes and necessary devices, and spent time
+                donating Blueboxes and necessary devices, spending time
                 educating instructors and students on how to leverage the
                 Bluebox's capabilities. This effort was not just about providing
                 technological tools, but also about empowering these communities
                 with new avenues for learning and development.
               </div>
+              <div style={{ fontWeight: "bold" }}>Purpose</div>
               <div>
                 Unfortunately, students enrolled in the course have just a
                 single chance to visit these schools, and Creighton’s professors
@@ -75,13 +68,29 @@ function ProjectPage() {
                 that every school maximizes the benefits of the Bluebox,
                 unlocking its full potential for enhancing education.
               </div>
-              <hr />
+              <div style={{ fontWeight: "bold" }}>Where We Are Now</div>
+              <div>
+                Currently, the Bluebox Forum has a user-friendly interface with
+                features for posting and commenting, fostering active community
+                engagement. It is integrated with robust and scalable REST APIs
+                using Express, with a MongoDB server for efficient data
+                management. Moving forwards, we are working with Creighton
+                University to integrate the forum with their systems, enhancing
+                its accessibility and longevity. This initiative is pivotal in
+                our mission to continually support past and future Bluebox
+                beneficiaries, ensuring it's lasting impact on global education.
+              </div>
+              <div style={{ fontWeight: "bold" }}>Tasks</div>
               <ul>
-                <div style={{ fontWeight: "bold" }}>Tasks:</div>
                 <li>
                   Created a forum for Bluebox recipients to troubleshoot issues
                   and contribute to the Bluebox community using MongoDB,
                   Express, React, and Node
+                </li>
+                <li>
+                  Designed robust and scalable REST APIs using Express and Node
+                  enabling seamless data handling, real-time data updating, and
+                  efficient server-side operations with MongoDB
                 </li>
                 <li>
                   Leveraged React Router DOM for URL driven navigation and
@@ -94,12 +103,17 @@ function ProjectPage() {
                   responsive user interface components with React and React
                   Bootstrap
                 </li>
-                <li>
-                  Designed robust and scalable REST APIs using Express and Node
-                  enabling seamless data handling, real-time data updating, and
-                  efficient server-side operations with MongoDB
-                </li>
               </ul>
+              <div style={{ fontWeight: "bold" }}>Demo</div>
+              <video
+                className="project-page-video"
+                autoPlay
+                muted
+                playsInline
+                loop
+                src={BlueboxForumDemo}
+                type="video/mp4"
+              />
             </div>
           </div>
         </>
