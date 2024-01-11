@@ -1,0 +1,66 @@
+.experience-page-content {
+  padding-left: 2.5vw; /* Edge Formatting */
+  padding-right: 2.5vw; /* Edge Formatting */
+  padding-bottom: 10vh;
+  display: flex;
+  gap: 2.5%;
+  opacity: 0;
+  animation: reveal 1.5s ease forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .experience-page-content {
+    flex-direction: column;
+  }
+
+  .experience-page-details {
+    width: 100%;
+  }
+
+  .experience-page-description {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .experience-page-content {
+    flex-direction: row;
+  }
+
+  .experience-page-details {
+    width: 40%;
+  }
+
+  .experience-page-description {
+    width: 60%;
+  }
+}
+
+.experience-page-description {
+  text-align: justify;
+}
+
+.experience-page-details-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-page-description-item-container {
+  line-height: 20px;
+}
+
+ul {
+  list-style-type: none; /* Removes default bullets */
+  padding-left: 0; /* Optional: Adjusts padding if needed */
+}
+
+ul li::before {
+  content: "— "; /* Em dash as the bullet point */
+}
