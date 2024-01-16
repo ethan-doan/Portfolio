@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Badge from "./Badge.js";
 import ExperienceContent from "./ExperienceContent.js";
 import Navbar from "./Navbar";
 import TitleCarousel from "./TitleCarousel";
@@ -20,6 +21,20 @@ function ExperiencePage() {
             tenure="June 2023 – Present"
             location="Omaha, Nebraska"
           >
+            <div className="skills-container">
+              <Badge text="React" />
+              <Badge text="TypeScript" />
+              <Badge text="HTML" />
+              <Badge text="CSS" />
+              <Badge text="C#" />
+              <Badge text=".NET" />
+              <Badge text="Node" />
+              <Badge text="NPM" />
+              <Badge text="Postman" />
+              <Badge text="Azure DevOps" />
+              <Badge text="Git" />
+              <Badge text="Agile" />
+            </div>
             <li className="experience-page-description-item">
               Develop end-to-end enterprise applications of Gallup’s Survey
               Platforms using C#, .NET, and React
@@ -62,6 +77,15 @@ function ExperiencePage() {
             tenure="May 2022 – June 2023"
             location="Omaha, Nebraska"
           >
+            <div className="skills-container">
+              <Badge text="Groovy" />
+              <Badge text="Spring" />
+              <Badge text="Swagger" />
+              <Badge text="Kubernetes" />
+              <Badge text="Git" />
+              <Badge text="Bitbucket" />
+              <Badge text="Agile" />
+            </div>
             <li className="experience-page-description-item">
               Organized, initiated, and created fully functional front and back
               end features, effectively streamlining actuary and underwriter
@@ -93,7 +117,14 @@ function ExperiencePage() {
             tenure="January 2022 – May 2022"
             location="Omaha, Nebraska"
           >
-            {" "}
+            <div className="skills-container">
+              <Badge text="Python" />
+              <Badge text="Bloomberg Terminal" />
+              <Badge text="Data Analysis" />
+              <Badge text="PowerBI" />
+              <Badge text="Excel" />
+              <Badge text="Financial Modeling" />
+            </div>
             <li className="experience-page-description-item">
               Developed machine learning algorithms with Python to forecast the
               commodities market
@@ -123,7 +154,13 @@ function ExperiencePage() {
             company="Union Pacific Railroad"
             location="Omaha, Nebraska"
           >
-            {" "}
+            <div className="skills-container">
+              <Badge text="Tableau" />
+              <Badge text="PostgreSQL" />
+              <Badge text="Database Management" />
+              <Badge text="Data Governance" />
+              <Badge text="Data Analysis" />
+            </div>
             <li className="experience-page-description-item">
               Performed ad-hoc data analysis through Tableau for a wide variety
               of departments involving reporting, modeling, and forecasting
