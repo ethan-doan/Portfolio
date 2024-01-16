@@ -104,6 +104,8 @@ function ProjectPage() {
                   Bootstrap
                 </li>
               </ul>
+            </div>
+            <div className="project-page-demo">
               <div style={{ fontWeight: "bold" }}>Demo</div>
               <video
                 className="project-page-video"
