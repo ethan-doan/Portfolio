@@ -13,8 +13,8 @@
 
 .project-page-content {
   display: flex;
-  padding-left: 2.5vw; /* Edge Formatting */
-  padding-right: 2.5vw; /* Edge Formatting */
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
   padding-bottom: 10vh;
 }
 
