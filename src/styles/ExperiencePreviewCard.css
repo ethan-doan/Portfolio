@@ -11,7 +11,7 @@
 }
 
 .experience-preview-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .experience-title {
