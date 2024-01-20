@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a7d0eac0.css",
-    "main.js": "/static/js/main.18dfc135.js",
+    "main.css": "/static/css/main.f5e7cf1b.css",
+    "main.js": "/static/js/main.5726b836.js",
     "static/js/787.f634ae44.chunk.js": "/static/js/787.f634ae44.chunk.js",
     "static/media/BlueboxForumDemo.mp4": "/static/media/BlueboxForumDemo.e46cb17638f0fab9b8c2.mp4",
     "static/media/HeadshotColor.jpg": "/static/media/HeadshotColor.4940d2a936f3b11b2a4b.jpg",
     "index.html": "/index.html",
-    "main.a7d0eac0.css.map": "/static/css/main.a7d0eac0.css.map",
-    "main.18dfc135.js.map": "/static/js/main.18dfc135.js.map",
+    "main.f5e7cf1b.css.map": "/static/css/main.f5e7cf1b.css.map",
+    "main.5726b836.js.map": "/static/js/main.5726b836.js.map",
     "787.f634ae44.chunk.js.map": "/static/js/787.f634ae44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7d0eac0.css",
-    "static/js/main.18dfc135.js"
+    "static/css/main.f5e7cf1b.css",
+    "static/js/main.5726b836.js"
   ]
 }
