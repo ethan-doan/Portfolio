@@ -40,6 +40,11 @@
   overflow: hidden; /* Hides Double Text */
 }
 
+hr {
+  border: none; /* Removes the default border */
+  border-top: 1px solid #212121; /* Adds a top border with your chosen color and thickness */
+}
+
 @keyframes riseAndExitUp {
   0%,
   20% {
