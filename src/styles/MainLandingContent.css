@@ -17,7 +17,8 @@
 }
 
 .main-landing-content-container {
-  width: 100vw; /* Width */
+  width: calc(100vw - (100vw - 100%));
+  /* Width */
   height: calc(95vh - 15px - 2vh); /* Height */
   display: flex; /* Flexbox */
   flex-direction: column; /* Align Items Vertically */

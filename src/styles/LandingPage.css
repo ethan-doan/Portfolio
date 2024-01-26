@@ -6,7 +6,8 @@
 .landing-page-container {
   color: #f5f5f5; /* Text Color */
   background-color: #212121; /* Background Color */
-  width: 100vw; /* Width */
+  width: calc(100vw - (100vw - 100%));
+  /* Width */
   height: 100vh; /* Height */
   display: flex; /* Flexbox */
   /* position: absolute; */ /* Layer On Top Of MainContent */

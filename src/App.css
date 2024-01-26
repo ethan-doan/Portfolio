@@ -15,7 +15,8 @@
 }
 
 .minimize-point {
-  width: 100vw; /* Width to Cover Viewport */
+  width: calc(100vw - (100vw - 100%));
+  /* Width to Cover Viewport */
   height: 100vh; /* Height to Cover Viewport */
   position: absolute; /* Viewport Blank Canvas */
 }
