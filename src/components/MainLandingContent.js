@@ -5,9 +5,6 @@ function MainLandingContent({ isAnimationComplete }) {
   return (
     <>
       <div className="main-landing-content-container">
-        {!isAnimationComplete && (
-          <div className="navbar-placeholder" style={{ height: "5vh" }}></div>
-        )}
         <img
           className="headshot"
           src={require("../images/HeadshotColor.jpg")}
