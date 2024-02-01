@@ -19,6 +19,13 @@
   }
 }
 
+.scroll-text {
+  position: absolute;
+  bottom: -100%;
+  width: 100%; /* Centering */
+  animation: riseAndExitUp 3s cubic-bezier(0.25, 0.5, 0.25, 1) infinite; /* Animation */
+}
+
 .scroll-text-first {
   animation-delay: 1s; /* Delay */
 }
