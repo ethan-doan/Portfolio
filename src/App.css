@@ -1,5 +1,10 @@
 .app {
   font-family: "IBM Plex Mono", monospace;
+  background-color: #f5f5f5;
+}
+
+.app::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 @media (max-width: 1200px) {
@@ -12,19 +17,6 @@
   .app {
     font-size: 14px;
   }
-}
-
-.minimize-point {
-  width: 100vw; /* Width to Cover Viewport */
-  height: 100vh; /* Height to Cover Viewport */
-  position: absolute; /* Viewport Blank Canvas */
-}
-
-.scroll-text {
-  position: absolute;
-  bottom: -100%;
-  width: 100%; /* Centering */
-  animation: riseAndExitUp 3s cubic-bezier(0.25, 0.5, 0.25, 1) infinite; /* Animation */
 }
 
 .scroll-text-first {
