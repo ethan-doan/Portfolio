@@ -16,7 +16,7 @@ function ExperiencePage() {
         <>
           <TitleCarousel title="Gallup" invert={true} />
           <ExperienceContent
-            role="Software Developer Intern"
+            role="Software Developer"
             company="Gallup"
             tenure="June 2023 – Present"
             location="Omaha, Nebraska"

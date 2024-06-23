@@ -51,21 +51,20 @@ function ExperiencePreview({ setAltScreen }) {
             style={{ textDecoration: "none" }}
           >
             <ExperiencePreviewCard
-              title="01 Software Developer Intern | Gallup"
+              title="01 Software Developer | Gallup"
               timeline="June 2023 – Present"
             >
-              In my role as a Software Developer Intern at Gallup, I engage in
-              crafting comprehensive enterprise solutions for Gallup's survey
-              systems, employing a blend of technologies like C#, .NET, and
-              React for holistic application development. My responsibilities
-              include engineering dynamic front-end elements in alignment with
-              user requirements and feedback. Additionally, I bolster the
-              robustness and efficiency of our web platforms and APIs through
-              rigorous Test-Driven Development practices, complemented by my
-              involvement in API design and system optimization tasks to enhance
-              user interactions. My approach is deeply rooted in Agile
-              methodologies, ensuring streamlined and high-quality software
-              development cycles.
+              In my role as a Software Developer at Gallup, I engage in crafting
+              comprehensive enterprise solutions for Gallup's survey systems,
+              employing a blend of technologies like C#, .NET, and React for
+              holistic application development. My responsibilities include
+              engineering dynamic front-end elements in alignment with user
+              requirements and feedback. Additionally, I bolster the robustness
+              and efficiency of our web platforms and APIs through rigorous
+              Test-Driven Development practices, complemented by my involvement
+              in API design and system optimization tasks to enhance user
+              interactions. My approach is deeply rooted in Agile methodologies,
+              ensuring streamlined and high-quality software development cycles.
             </ExperiencePreviewCard>
           </Link>
         </div>

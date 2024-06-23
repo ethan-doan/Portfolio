@@ -20,6 +20,10 @@ function EducationPreview() {
         </div>
         <hr />
         <div className="education-content-item-extra">
+          Honors: Summa Cum Laude, Charles F. and Mary C. Heider Scholar, Joella
+          Cohen Scholar, Deans Honor Roll (All Semesters)
+        </div>
+        <div className="education-content-item-extra">
           Extracurriculars: Computer Science Club, Practicum in International
           Development, Portfolio Practicum, Formula One Club, Creighton
           Investment Banking Society, Institute for Economic Inquiry
